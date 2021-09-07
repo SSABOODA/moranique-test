@@ -17,5 +17,3 @@ class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ['email', 'name', 'password', 'is_admin']
-
-        
