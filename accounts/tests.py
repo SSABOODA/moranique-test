@@ -1,9 +1,7 @@
-import json
+from rest_framework      import status
+from rest_framework.test import APIClient, APITestCase
 
 from accounts.models import User
-from django.urls import reverse
-from rest_framework                  import response, status
-from rest_framework.test             import APITestCase, APIClient
 
 
 class UserTestCase(APITestCase):
