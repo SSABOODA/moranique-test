@@ -57,73 +57,23 @@ Ddjango REST framework를 사용하여 blog 게시물을 생성 및 조회하는
 > Usage
 - http://18.220.46.183/api/blogs/
 위의 url을 주소창에 입력하면 다음과 같이 DB에 저장된 블로그 게시물 목록을 조회할 수 있습니다.
-```
-[
-    {
-        "id": 1,
-        "title": "테스트1",
-        "created_at": "2021-09-08T07:32:51.245101Z",
-        "user": "test1",
-        "body": "테스트1",
-        "user_id": 1
-    },
-    {
-        "id": 2,
-        "title": "테스트2",
-        "created_at": "2021-09-08T07:34:29.442624Z",
-        "user": "test1",
-        "body": "테스트2",
-        "user_id": 1
-    },
-    {
-        "id": 3,
-        "title": "테스트3",
-        "created_at": "2021-09-08T08:23:58.291019Z",
-        "user": "test1",
-        "body": "테스트3",
-        "user_id": 1
-    },
-    {
-        "id": 4,
-        "title": "테스트4",
-        "created_at": "2021-09-08T08:29:33.874235Z",
-        "user": "test1",
-        "body": "테스트4",
-        "user_id": 1
-    },
-    {
-        "id": 5,
-        "title": "test 0 테스트5",
-        "created_at": "2021-09-08T08:48:01.687167Z",
-        "user": "test0",
-        "body": "test 0 테스트5",
-        "user_id": 2
-    },
-    {
-        "id": 6,
-        "title": "test1 테스트 글6",
-        "created_at": "2021-09-08T09:38:47.722968Z",
-        "user": "test1",
-        "body": "test1 테스트 글6",
-        "user_id": 1
-    },
-    {
-        "id": 7,
-        "title": "test1 테스트 글7",
-        "created_at": "2021-09-08T09:52:36.672533Z",
-        "user": "test1",
-        "body": "test1 테스트 글7",
-        "user_id": 1
-    },
-    {
-        "id": 8,
-        "title": "test2 write",
-        "created_at": "2021-09-08T14:11:57.891674Z",
-        "user": "test2",
-        "body": "test2 write",
-        "user_id": 3
-    }
-]
-```
+
+![스크린샷 2021-09-10 오전 1 27 22](https://user-images.githubusercontent.com/69753846/132725261-b04fc1a4-fd87-4fa6-ba95-140461ff0cf0.png)
+
+
 - http://18.220.46.183/api/blog/create/
 위의 url로 이동하면 blog 게시물을 등록할 수 있는 엔드포인트 화면이 나타납니다.
+
+![스크린샷 2021-09-10 오전 1 22 00](https://user-images.githubusercontent.com/69753846/132724716-63fd022c-738c-4a62-bbf6-06ce72e07b04.png)
+- 인증 권한이 없는 비회원일 시 생성이 불가능하도록 구현하였습니다. 
+- 우측 상단 Login 버튼을 눌러 로그인을 진행합니다.
+- email : test1@naver.com, password : test11111 입력
+- 이후 게시물을 생성할 수 있는 input창이 생성됩니다. 
+
+
+![스크린샷 2021-09-10 오전 1 25 50](https://user-images.githubusercontent.com/69753846/132725083-d5b3fecc-0b31-4d9f-bffa-f26f1b78543f.png)
+
+- input 창에 제목과 내용을 작성하고 post하면 게시물이 생성됩니다.
+
+![스크린샷 2021-09-10 오전 1 26 54](https://user-images.githubusercontent.com/69753846/132725162-fa4f7207-1f40-4aca-9a6c-a25b05434d4e.png)
+
