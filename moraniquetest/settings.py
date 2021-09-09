@@ -27,7 +27,7 @@ DATABASES  = DATABASES
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*', '52.14.175.113', '52.14.175.113:8000']
 
 
 # Application definition
